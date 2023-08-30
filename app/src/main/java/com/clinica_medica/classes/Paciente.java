@@ -1,6 +1,7 @@
 package com.clinica_medica.classes;
 
 public class Paciente {
+    int idPaciente;
     String nome; 
     String cpf;
     String dataNascimento;
@@ -11,6 +12,12 @@ public class Paciente {
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
+    }
+    public int getIdPaciente() {
+        return idPaciente;
+    }
+    public void setIdPaciente(int idPaciente) {
+        this.idPaciente = idPaciente;
     }
     public String getNome() {
         return nome;
@@ -36,5 +43,6 @@ public class Paciente {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    
 }
+
+
