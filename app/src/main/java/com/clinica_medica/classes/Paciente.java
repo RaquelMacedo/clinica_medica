@@ -1,18 +1,17 @@
 package com.clinica_medica.classes;
 
-public class Paciente {
+public class  Paciente extends Pessoa {
     int idPaciente;
-    String nome; 
-    String cpf;
-    String dataNascimento;
-    String endereco;
+
+
     
-    public Paciente(String nome, String cpf, String dataNascimento, String endereco) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.dataNascimento = dataNascimento;
-        this.endereco = endereco;
+    public Paciente(int id, String nome, String cpf, String endereco, int dataNascimento, Contato contato,
+            int idPaciente) {
+        super(id, nome, cpf, endereco, dataNascimento, contato);
+        this.idPaciente = idPaciente;
     }
+    
+    
     public int getIdPaciente() {
         return idPaciente;
     }
@@ -31,17 +30,31 @@ public class Paciente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
+   
     public String getEndereco() {
         return endereco;
     }
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+    @Override
+    public void criar () {
+        //Cria Cadastro
+    }
+    @Override
+    public void  ler () {
+        //ler cadastro
+    }
+    @Override
+    public void atualizar () {
+        //atualiza cadastro
+    }
+    @Override
+    public void deletar () {
+        //deleta cadastro
+    }
+     public void enviarEmail(){
+        //Receber instrucoes de seguranca do trabalho
     }
 }
 

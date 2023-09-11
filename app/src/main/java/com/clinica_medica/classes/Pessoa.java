@@ -1,6 +1,8 @@
 package com.clinica_medica.classes;
 
-public class Pessoa {
+import interfaces.Crud;
+
+public abstract class Pessoa implements Crud{
     int id;
     String nome; 
     String cpf;
@@ -52,5 +54,21 @@ public class Pessoa {
     public void setContato(Contato contato) {
         this.contato = contato;
     }
-    
+    @Override
+    public void criar () {
+        //Cria Cadastro
+    }
+    @Override
+    public void  ler () {
+
+    }
+    @Override
+    public void atualizar () {
+
+    }
+    @Override
+    public void deletar () {
+
+    }
+    abstract void enviarEmail();
 }

@@ -10,6 +10,24 @@ public class Recepcionista extends Pessoa {
         super(id, nome, cpf, endereco, dataNascimento, contato);
         this.idRecepcionista = idRecepcionista;
     }
-    
+    @Override
+    public void criar () {
+        //Cria Cadastro
+    }
+    @Override
+    public void  ler () {
+        //ler cadastro
+    }
+    @Override
+    public void atualizar () {
+        //atualiza cadastro
+    }
+    @Override
+    public void deletar () {
+        //deleta cadastro
+    }
+     public void enviarEmail(){
+        //Receber instrucoes de seguranca do trabalho
+    }
     
 }
